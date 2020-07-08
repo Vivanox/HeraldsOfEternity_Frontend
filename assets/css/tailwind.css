@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './slick-carousel.css';
+
+@font-face {
+    font-family: VampireWars;
+    src: url("../fonts/VampireWars.ttf") format("truetype"), 
+         url("../fonts/VampireWars.otf") format("opentype");
+}
+
+body {
+    font-family: 'VampireWars';
+}
