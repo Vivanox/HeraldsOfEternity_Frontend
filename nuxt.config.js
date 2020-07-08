@@ -70,7 +70,6 @@ export default {
             flag: 'us',
             iso: 'en-US',
             file: 'en-US.js',
-            isCatchallLocale: true,
           },
           {
             code: 'da',
@@ -79,6 +78,7 @@ export default {
             file: 'da-DK.js',
           },
         ],
+        defaultLocale: 'en',
         seo: true,
         lazy: true,
         langDir: 'lang/',
