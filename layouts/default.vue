@@ -160,7 +160,7 @@ export default {
     links: [
       {
         label: 'About',
-        to: '/',
+        to: '/about',
       },
       {
         label: 'Credits',

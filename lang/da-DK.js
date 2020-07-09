@@ -21,4 +21,8 @@ export default {
     'Som en support, vil du finde dig det meste af tiden bag dit hold',
   "You'll be in charge of keeping your team mates healthy and assist where needed":
     'Du vil være ansvarlog for at holde dit hold i live og hjælpe hvor nødvendigt',
+  Developers: 'Udviklere',
+  Contributors: 'Bidragydere',
+  'Thanks to': 'Tak til',
+  Call: 'Ring op',
 }
