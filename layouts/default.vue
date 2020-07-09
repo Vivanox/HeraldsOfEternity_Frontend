@@ -131,17 +131,17 @@
   opacity: 0;
 }
 
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
-}
-.page-enter,
-.page-leave-active {
-  opacity: 0;
+.page-enter-active {
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.3, 1);
 }
 
-main {
-  transition: all 0.3s ease;
+.page-leave-active {
+  transition: all 0.7s cubic-bezier(1, 0.5, 0.7, 1);
+}
+.page-enter,
+.page-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
 }
 </style>
 
