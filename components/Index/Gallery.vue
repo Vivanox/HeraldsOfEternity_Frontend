@@ -50,19 +50,19 @@
     </div>
 
     <div class="w-full pr-2 xl:w-1/4 p-4 text-white">
-      <heading>Welcome to Heralds of Eternity</heading>
-      <paragraph>Heralds of Eternity is a team-based:</paragraph>
+      <heading>{{ $t('Welcome to Heralds of Eternity') }}</heading>
+      <paragraph>{{ $t('Heralds of Eternity is a team-based') }}:</paragraph>
       <ul class="list-disc pl-4">
         <li>Deathmatch</li>
-        <li>Capture the flag</li>
-        <li>And Domination</li>
+        <li>Capture the flag (CTF)</li>
+        <li>Domination</li>
       </ul>
-      <paragraph>Game with a twist.</paragraph>
-      <paragraph
-        >Play view a top-down, first-person or third-person view.</paragraph
-      >
-      <paragraph>We offer 16 <b>powerful</b> Heralds,</paragraph>
-      <paragraph>Ready to be played in a 8 vs 8 game.</paragraph>
+      <paragraph>{{ $t('Game with a twist.') }}</paragraph>
+      <paragraph>{{
+        $t('Play with a top-down, first-person or third-person view.')
+      }}</paragraph>
+      <paragraph>{{ $t('We offer 16 powerful Heralds') }},</paragraph>
+      <paragraph>{{ $t('Ready to be played in a 8 vs 8 game.') }}</paragraph>
     </div>
   </card>
 </template>
