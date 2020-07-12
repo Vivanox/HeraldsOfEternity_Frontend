@@ -2,7 +2,7 @@
   <div
     class="min-h-screen"
     :style="{
-      background: 'url(Background01_Space.png)',
+      background: `url(${backgroundURL})`,
       backgroundSize: 'cover',
     }"
   >
@@ -181,6 +181,10 @@ export default {
     ],
   }),
   computed: {
+    backgroundURL() {
+      return require('~/static/Background01_Space.png')
+    },
+
     currentLocale() {
       return this.$i18n.locales.filter((i) => i.code === this.$i18n.locale)[0]
     },
