@@ -84,6 +84,7 @@ export default {
         langDir: 'lang/',
       },
     ],
+    'nuxt-leaflet',
   ],
   /*
    ** Axios module configuration
