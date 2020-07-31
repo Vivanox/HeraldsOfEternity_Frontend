@@ -11,9 +11,12 @@ module.exports = {
         brand: '#131313',
         glass: 'rgba(0.429, 0.429, 0.429, 0.200)',
         'white-smoke': 'rgba(255.429, 255.429, 255.429, 0.200)',
+        'dark-glass': 'rgba(0.429, 0.429, 0.429, 0.700)',
       },
     },
   },
-  variants: {},
+  variants: {
+    rotate: ['responsive', 'group-hover', 'hover', 'focus'],
+  },
   plugins: [],
 }

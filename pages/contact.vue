@@ -1,14 +1,10 @@
 <template>
-  <div class="container mx-auto">
-    <Heading
-      class="text-3xl leading-9 font-extrabold tracking-tight text-white sm:text-4xl sm:leading-10"
-    >
-      {{ $t('Ready to hear from you!') }}
-    </Heading>
+  <div>
+    <FrequentlyAskedQuestions />
 
-    <ContactRequest />
+    <ContactRequest class="mt-8" />
 
-    <div class="flex justify-center mt-8">
+    <div class="mx-auto container flex justify-center mt-8">
       <div>
         <Heading class="text-white">{{ $t('Contact Vivanox Studio') }}</Heading>
 
@@ -52,7 +48,7 @@
       </div>
     </div>
 
-    <div class="h-screen">
+    <div class="mx-auto container h-screen">
       <no-ssr>
         <l-map :zoom="11" :map="19" :center="[55.86262, 8.61428]">
           <l-tile-layer
