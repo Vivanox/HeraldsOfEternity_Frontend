@@ -2,9 +2,9 @@
   <div>
     <FrequentlyAskedQuestions />
 
-    <ContactRequest class="mt-8" />
+    <ContactRequest class="mt-48" />
 
-    <div class="mx-auto container flex justify-center mt-8">
+    <div class="mx-auto container flex justify-center mt-48">
       <div>
         <Heading class="text-white">{{ $t('Contact Vivanox Studio') }}</Heading>
 
