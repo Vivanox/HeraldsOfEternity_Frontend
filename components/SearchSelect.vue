@@ -21,7 +21,7 @@
         </div>
 
         <input
-          v-model="issue"
+          v-model="query"
           class="form-input text-white block w-full pr-10 pl-10 py-2 sm:text-sm sm:leading-5 bg-transparent border border-white"
           type="search"
           autocomplete="on"
