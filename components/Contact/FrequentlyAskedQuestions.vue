@@ -13,19 +13,24 @@
     </SubHeading>
 
     <div class="mt-6">
-      <label>
-        <select
-          v-model="issue"
-          class="form-select text-white block w-full pr-10 pl-2 py-2 sm:text-sm sm:leading-5 bg-transparent border border-white"
-        >
-          <option>{{ $t('Account') }}</option>
-          <option>{{ $t('Technical Issue') }}</option>
-          <option>{{ $t('Billing & Payment') }}</option>
-          <option>{{ $t('Reporting & Bans') }}</option>
-          <option>{{ $t('Gameplay') }}</option>
-          <option>{{ $t('Other') }}</option>
-        </select>
-      </label>
+      <SearchSelect
+        v-model="issue"
+        :options="[
+          'Account',
+          'Technical Issue',
+          'Billing & Payment',
+          'Reporting & Bans',
+          'Gameplay',
+          'Other',
+        ]"
+        :filter="
+          (option, query) => {
+            const match = new RegExp(query, 'i')
+
+            return match.test(option)
+          }
+        "
+      ></SearchSelect>
     </div>
 
     <button class="group mx-auto flex justify-center mt-4">
