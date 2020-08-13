@@ -12,6 +12,7 @@
           <TextField
             v-model="form.name"
             :label="$t('Name')"
+            validation-field="name"
             autocomplete="name"
             :autofocus="true"
             rules="required|max:254"
@@ -22,6 +23,7 @@
             v-model="form.email"
             class="mt-6"
             :label="$t('E-Mail')"
+            validation-field="email"
             type="email"
             autocomplete="email"
             rules="required|max:254|email"
@@ -34,12 +36,18 @@
             v-model="form.subject"
             class="mt-6"
             :label="$t('Subject')"
+            validation-field="subject"
             autocomplete="off"
             rules="required|max:254"
             :placeholder="$t('Briefly describe what your inquery is about')"
           />
 
-          <TextField class="mt-6" :label="$t('Message')" rules="required">
+          <TextField
+            class="mt-6"
+            :label="$t('Message')"
+            rules="required"
+            validation-field="message"
+          >
             <template v-slot="{ id, describedBy, failed }">
               <textarea
                 :id="id"
@@ -57,8 +65,9 @@
 
           <div class="mt-6">
             <button
+              v-tooltip="$t('Click to send contact request')"
               type="submit"
-              class="w-full flex justify-center text-brand hover:text-white"
+              class="w-full flex justify-center text-white hover:text-gray-500"
               :class="{
                 'text-red-500': state === states.ERROR,
                 'text-green-500': state === states.SUCCESS,
@@ -80,7 +89,7 @@
                 />
               </svg>
 
-              {{ state }}
+              <p class="text-center flex items-center">{{ state }}</p>
             </button>
           </div>
         </form>
@@ -97,6 +106,7 @@ extend('max', max)
 extend('email', email)
 
 const states = {
+  DEFAULT: 'Send Contact Request',
   SUBMITTING: 'Submitting...',
   ERROR: 'Whoopsie, please see fields for errors.',
   SUCCESS: 'Thanks! Your request has been received.',
@@ -108,7 +118,7 @@ export default {
   },
 
   data: () => ({
-    state: null,
+    state: states.DEFAULT,
     states,
 
     form: {

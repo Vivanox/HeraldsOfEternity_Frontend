@@ -37,6 +37,7 @@
     "stylelint": "^13.6.1",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-standard": "^20.0.0",
+    "v-tooltip": "^2.0.3",
     "vee-validate": "^3.3.7",
     "vue-country-flag": "^2.0.1",
     "vue-slick-carousel": "^1.0.6"

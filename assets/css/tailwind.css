@@ -3,13 +3,14 @@
 @import 'tailwindcss/utilities';
 
 @import './slick-carousel.css';
+@import './v-tooltip.css';
 
 @font-face {
-    font-family: VampireWars;
-    src: url("../fonts/VampireWars.ttf") format("truetype"), 
-         url("../fonts/VampireWars.otf") format("opentype");
+  font-family: VampireWars;
+  src: url('../fonts/VampireWars.ttf') format('truetype'),
+    url('../fonts/VampireWars.otf') format('opentype');
 }
 
 body {
-    font-family: 'VampireWars';
+  font-family: 'VampireWars';
 }
