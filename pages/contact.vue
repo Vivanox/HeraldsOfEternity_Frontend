@@ -5,10 +5,12 @@
     <ContactRequest class="mt-48" />
 
     <div class="mx-auto container flex justify-center mt-48">
-      <div>
-        <Heading class="text-white">{{ $t('Contact Vivanox Studio') }}</Heading>
+      <div class="mx-auto">
+        <Heading class="text-3xl text-white">{{
+          $t('Contact Vivanox Studio')
+        }}</Heading>
 
-        <span class="flex items-center text-white text-xl mt-4">
+        <span class="flex items-center text-white text-3xl mt-6">
           <svg
             class="h-8 w-8"
             fill="none"
@@ -32,11 +34,11 @@
           <span class="text-center pl-8">
             <Paragraph>Odderupvej 16</Paragraph>
             <Paragraph>6880</Paragraph>
-            <Paragraph>TarmDenmark</Paragraph>
+            <Paragraph>Tarm, Denmark</Paragraph>
           </span>
         </span>
 
-        <span class="flex text-white mt-4 text-xl">
+        <span class="flex text-white mt-6 text-3xl">
           <svg class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
             <path
               d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
@@ -46,20 +48,24 @@
           <Paragraph class="pl-8">+45 20 32 95 96</Paragraph>
         </span>
       </div>
+
+      <div class="mx-auto container h-64 w-64">
+        <no-ssr>
+          <l-map :zoom="9" :map="19" :center="[55.86262, 8.61428]">
+            <l-tile-layer
+              url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+            ></l-tile-layer>
+            <l-marker :lat-lng="[55.86262, 8.61428]">
+              <l-tooltip>Vivanox Studio</l-tooltip>
+            </l-marker>
+          </l-map>
+        </no-ssr>
+      </div>
     </div>
 
-    <div class="mx-auto container h-screen">
-      <no-ssr>
-        <l-map :zoom="11" :map="19" :center="[55.86262, 8.61428]">
-          <l-tile-layer
-            url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
-          ></l-tile-layer>
-          <l-marker :lat-lng="[55.86262, 8.61428]">
-            <l-tooltip>Vivanox Studio</l-tooltip>
-          </l-marker>
-        </l-map>
-      </no-ssr>
-    </div>
+    <Heading class="mt-12 text-white text-center text-6xl">
+      {{ $t('Join the HOE Community') }}
+    </Heading>
   </div>
 </template>
 
