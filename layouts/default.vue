@@ -23,8 +23,8 @@
               :key="index"
               :to="link.to"
               :class="{ 'ml-8': index !== 0 }"
-              class="inline-flex items-center px-2 pt-1 h-12 text-xl font-medium leading-5 text-white hover:text-gray-200 hover:bg-white-smoke focus:outline-none focus:text-white focus:bg-glass transition duration-150 ease-in-out"
-              exact-active-class="bg-glass"
+              class="inline-flex items-center h-16 px-2 text-xl font-medium leading-5 text-white hover:text-orange-300 hover:bg-glass focus:outline-none focus:text-white focus:bg-glass transition duration-150 ease-in-out"
+              exact-active-class="bg-white-smoke text-orange-400"
               >{{ link.label }}</nuxt-link
             >
 
@@ -80,31 +80,65 @@
             </div>
           </div>
 
-          <!--
-      Mobile menu, toggle classes based on menu state.
+          <div class="-mr-2 flex items-center sm:hidden">
+            <!-- Mobile menu button -->
+            <button
+              class="inline-flex items-center justify-center p-2 rounded-md text-white ransition duration-150 ease-in-out"
+              @click="showMobileMenu = !showMobileMenu"
+            >
+              <svg
+                v-if="showMobileMenu"
+                class="h-6 w-6"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
 
-      Open: "block", closed: "hidden"
-          -->
-          <div class="hidden sm:hidden">
-            <div class="pt-2 pb-3">
-              <nuxt-link
-                v-for="(link, index) in links"
-                :key="index"
-                :to="link.to"
-                :class="{ 'mt-1': index !== 0 }"
-                class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out"
-                >{{ link.label }}</nuxt-link
+              <svg
+                v-else
+                class="h-6 w-6"
+                stroke="currentColor"
+                fill="none"
+                viewBox="0 0 24 24"
               >
-            </div>
-            <div class="pt-4 pb-3 border-t border-gray-200">
-              <nuxt-link
-                v-for="locale in availableLocales"
-                :key="locale.code"
-                :to="switchLocalePath(locale.code)"
-              >
-                <country-flag :country="locale.flag" />
-              </nuxt-link>
-            </div>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div v-show="showMobileMenu">
+          <div class="pt-2 pb-3">
+            <nuxt-link
+              v-for="(link, index) in links"
+              :key="index"
+              :to="link.to"
+              :class="{ 'mt-1': index !== 0 }"
+              class="block pl-3 pr-4 py-2 text-base font-medium text-white hover:text-orange-300 hover:bg-glass focus:outline-none focus:text-orange-400 transition duration-150 ease-in-out"
+              exact-active-class="border-l-4 border-orange-500 text-orange-400"
+              >{{ link.label }}</nuxt-link
+            >
+          </div>
+          <div class="pt-4 pb-3 border-t border-gray-200">
+            <nuxt-link
+              v-for="locale in availableLocales"
+              :key="locale.code"
+              :to="switchLocalePath(locale.code)"
+            >
+              <country-flag :country="locale.flag" />
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -211,6 +245,7 @@ export default {
 
   data: () => ({
     localeDropdownOpen: false,
+    showMobileMenu: false,
     links: [
       {
         label: 'About',
