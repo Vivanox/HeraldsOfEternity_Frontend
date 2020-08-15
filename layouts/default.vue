@@ -249,7 +249,7 @@ export default {
     links: [
       {
         label: 'About',
-        to: '/about',
+        to: '/',
       },
       {
         label: 'Credits',
