@@ -4,9 +4,9 @@
 
     <ContactRequest class="mt-48" />
 
-    <div class="mx-auto container flex justify-center mt-48">
+    <div class="mx-auto container flex justify-center px-4 mt-48">
       <div class="mx-auto">
-        <Heading class="text-3xl text-white">{{
+        <Heading class="text-xl md:text-3xl text-center text-white">{{
           $t('Contact Vivanox Studio')
         }}</Heading>
 
@@ -49,7 +49,7 @@
         </span>
       </div>
 
-      <div class="mx-auto container h-64 w-64">
+      <div class="mx-auto container hidden md:block h-64 w-64">
         <no-ssr>
           <l-map :zoom="9" :map="19" :center="[55.86262, 8.61428]">
             <l-tile-layer
@@ -63,7 +63,9 @@
       </div>
     </div>
 
-    <Heading class="mt-12 text-white text-center text-6xl">
+    <Heading
+      class="mt-12 text-white text-center text-lg md:text-3xl lg:text-6xl"
+    >
       {{ $t('Join the HOE Community') }}
     </Heading>
   </div>
