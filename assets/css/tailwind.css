@@ -6,11 +6,10 @@
 @import './v-tooltip.css';
 
 @font-face {
-  font-family: VampireWars;
-  src: url('../fonts/VampireWars.ttf') format('truetype'),
-    url('../fonts/VampireWars.otf') format('opentype');
+  font-family: Teko;
+  src: url('../fonts/Teko-Regular.ttf') format('truetype');
 }
 
 body {
-  font-family: 'VampireWars';
+  font-family: 'Teko';
 }
