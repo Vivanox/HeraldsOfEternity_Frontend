@@ -126,11 +126,17 @@
         <div v-show="showMobileMenu">
           <div class="pt-2 pb-3">
             <nuxt-link
+              :to="{ path: '/' }"
+              class="block pl-3 pr-4 py-2 text-base font-medium text-white hover:text-orange-300 hover:bg-glass focus:outline-none focus:text-orange-400 transition duration-150 ease-in-out"
+              exact-active-class="border-l-4 border-orange-500 text-orange-400"
+              >{{ $t('Index') }}</nuxt-link
+            >
+
+            <nuxt-link
               v-for="(link, index) in links"
               :key="index"
               :to="link.to"
-              :class="{ 'mt-1': index !== 0 }"
-              class="block pl-3 pr-4 py-2 text-base font-medium text-white hover:text-orange-300 hover:bg-glass focus:outline-none focus:text-orange-400 transition duration-150 ease-in-out"
+              class="mt-1 block pl-3 pr-4 py-2 text-base font-medium text-white hover:text-orange-300 hover:bg-glass focus:outline-none focus:text-orange-400 transition duration-150 ease-in-out"
               exact-active-class="border-l-4 border-orange-500 text-orange-400"
               >{{ link.label }}</nuxt-link
             >
