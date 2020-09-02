@@ -154,7 +154,7 @@
       </div>
     </nav>
 
-    <main class="mx-auto">
+    <main class="mx-auto py-1">
       <Nuxt />
     </main>
 
