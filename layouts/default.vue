@@ -154,11 +154,9 @@
       </div>
     </nav>
 
-    <div class="py-10">
-      <main class="mx-auto">
-        <Nuxt />
-      </main>
-    </div>
+    <main class="mx-auto">
+      <Nuxt />
+    </main>
 
     <footer class="bg-white-smoke">
       <div
