@@ -1,7 +1,7 @@
 <template>
   <img
-    class="appear block"
-    src="/HOESilver2.png"
+    class="appear block bg-white-smoke"
+    src="/logonobg.png"
     alt="Heralds Of Eternity Logo"
   />
 </template>
