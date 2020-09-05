@@ -17,9 +17,11 @@
       alt="Team of Heralds"
     />
 
-    <action-button class="mt-4 self-center" link="/heralds">
-      {{ $t('View all Heralds') }}
-    </action-button>
+    <StyledButton class="mt-4 self-center">
+      <nuxt-link :to="{ path: '/heralds' }">
+        {{ $t('View all Heralds') }}
+      </nuxt-link>
+    </StyledButton>
   </card>
 </template>
 
@@ -27,14 +29,12 @@
 import Card from '~/components/Card'
 import Heading from '~/components/Typography/Heading'
 import Paragraph from '~/components/Typography/Paragraph'
-import ActionButton from '~/components/ActionButton'
 
 export default {
   components: {
     Card,
     Heading,
     Paragraph,
-    ActionButton,
   },
 }
 </script>

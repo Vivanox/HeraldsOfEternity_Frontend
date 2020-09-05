@@ -12,7 +12,7 @@
           <div class="flex">
             <nuxt-link
               :to="{ path: '/' }"
-              class="hidden lg:flex flex-shrink-0 w-full items-center border-b-2 border-transparent hover:border-orange-gold focus:border-orange-600 transition duration-150 ease-in-out"
+              class="hidden lg:flex flex-shrink-0 w-full items-center border-b-2 border-transparent hover:border-orange-400 focus:border-orange-600 transition duration-150 ease-in-out"
               exact-active-class="border-orange-600"
             >
               <Logo class="h-16 w-auto py-2 px-2" />
@@ -27,8 +27,8 @@
               :key="index"
               :to="link.to"
               :class="{ 'ml-8': index !== 0 }"
-              class="inline-flex items-center h-16 px-2 pb-2 pt-3 text-4xl font-normal leading-5 text-white border-b-2 border-transparent hover:text-orange-gold hover:bg-glass hover:border-orange-gold focus:border-orange-600 focus:outline-none focus:text-white focus:bg-glass transition duration-150 ease-in-out"
-              exact-active-class="bg-white-smoke text-orange-gold border-orange-600"
+              class="inline-flex items-center h-16 px-2 pb-2 pt-3 text-4xl font-normal leading-5 text-white border-b-2 border-transparent hover:text-orange-300 hover:bg-glass hover:border-orange-400 focus:border-orange-600 focus:outline-none focus:text-white focus:bg-glass transition duration-150 ease-in-out"
+              exact-active-class="bg-white-smoke text-orange-400 border-orange-600"
               >{{ link.label }}</nuxt-link
             >
 
@@ -127,8 +127,8 @@
           <div class="pt-2 pb-3">
             <nuxt-link
               :to="{ path: '/' }"
-              class="block pl-3 pr-4 py-2 text-base font-medium text-white hover:text-orange-gold hover:bg-glass focus:outline-none focus:text-orange-gold transition duration-150 ease-in-out"
-              exact-active-class="border-l-4 border-orange-500 text-orange-gold"
+              class="block pl-3 pr-4 py-2 text-base font-medium text-white hover:text-orange-300 hover:bg-glass focus:outline-none focus:text-orange-400 transition duration-150 ease-in-out"
+              exact-active-class="border-l-4 border-orange-500 text-orange-400"
               >{{ $t('Index') }}</nuxt-link
             >
 
@@ -136,8 +136,8 @@
               v-for="(link, index) in links"
               :key="index"
               :to="link.to"
-              class="mt-1 block pl-3 pr-4 py-2 text-base font-medium text-white hover:text-orange-gold hover:bg-glass focus:outline-none focus:text-orange-gold transition duration-150 ease-in-out"
-              exact-active-class="border-l-4 border-orange-500 text-orange-gold"
+              class="mt-1 block pl-3 pr-4 py-2 text-base font-medium text-white hover:text-orange-300 hover:bg-glass focus:outline-none focus:text-orange-400 transition duration-150 ease-in-out"
+              exact-active-class="border-l-4 border-orange-500 text-orange-400"
               >{{ link.label }}</nuxt-link
             >
           </div>
