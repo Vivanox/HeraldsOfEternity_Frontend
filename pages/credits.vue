@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto bg-black flex flex-col">
+  <div class="container mx-auto bg-dark-blue flex flex-col">
     <h1
       class="self-center tracking-wide leading-3 text-white mt-10 mb-5 text-5xl"
     >
@@ -9,7 +9,7 @@
     <div
       v-for="(segment, segmentIndex) in credits"
       :key="segmentIndex"
-      :class="segmentIndex % 2 === 0 ? 'bg-black' : 'bg-gray-800'"
+      :class="segmentIndex % 2 === 0 ? 'bg-dark-blue' : 'bg-block-gray'"
     >
       <CreditGroupCard
         v-for="(creditables, group) in segment"

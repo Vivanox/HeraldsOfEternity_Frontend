@@ -10,7 +10,7 @@
       >
         <div class="flex-1 flex flex-col p-8">
           <img
-            class="w-32 h-32 flex-shrink-0 mx-auto bg-black rounded-full"
+            class="w-32 h-32 flex-shrink-0 mx-auto bg-dark-blue rounded-full"
             src="/roles/tank.png"
             alt="Tank Icon"
           />
@@ -64,7 +64,7 @@
       >
         <div class="flex-1 flex flex-col p-8">
           <img
-            class="w-32 h-32 flex-shrink-0 mx-auto bg-black rounded-full"
+            class="w-32 h-32 flex-shrink-0 mx-auto bg-dark-blue rounded-full"
             src="/roles/dps.png"
             alt="DPS Icon"
           />
@@ -110,7 +110,7 @@
       >
         <div class="flex-1 flex flex-col p-8">
           <img
-            class="w-32 h-32 flex-shrink-0 mx-auto bg-black rounded-full"
+            class="w-32 h-32 flex-shrink-0 mx-auto bg-dark-blue rounded-full"
             src="/roles/support.png"
             alt="Support Icon"
           />

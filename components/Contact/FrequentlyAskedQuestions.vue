@@ -36,7 +36,7 @@
 
     <button class="group mx-auto flex justify-center mt-4">
       <svg
-        class="transition duration-300 ease-linear h-16 w-16 text-orange-300 text-center transform group-hover:rotate-90"
+        class="transition duration-300 ease-linear h-16 w-16 text-orange-gold text-center transform group-hover:rotate-90"
         fill="currentColor"
         viewBox="0 0 45.973 45.973"
       >
@@ -59,7 +59,7 @@
         </g>
       </svg>
       <svg
-        class="transition duration-300 ease-linear h-8 w-8 text-orange-300 text-center transform group-hover:-rotate-90"
+        class="transition duration-300 ease-linear h-8 w-8 text-orange-gold text-center transform group-hover:-rotate-90"
         fill="currentColor"
         viewBox="0 0 45.973 45.973"
       >

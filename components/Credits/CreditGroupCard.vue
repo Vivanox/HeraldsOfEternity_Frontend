@@ -1,7 +1,7 @@
 <template>
   <card class="flex flex-col justify-center">
     <h1
-      class="self-center tracking-wide leading-9 text-orange-400 text-5xl pb-5"
+      class="self-center tracking-wide leading-9 text-orange-gold text-5xl pb-5"
       v-html="group"
     />
 

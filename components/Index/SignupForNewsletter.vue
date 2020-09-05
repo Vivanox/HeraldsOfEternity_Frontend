@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black px-4 relative">
+  <div class="bg-dark-blue px-4 relative">
     <div class="py-6 container mx-auto">
       <Heading
         class="text-3xl leading-9 font-extrabold tracking-tight text-center text-white sm:text-4xl sm:leading-10"

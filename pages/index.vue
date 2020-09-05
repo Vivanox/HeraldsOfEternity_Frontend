@@ -10,7 +10,7 @@
       <span class="inline-flex bg-orange-500 group p-2">
         <button
           type="button"
-          class="inline-flex items-center px-48 py-10 border-4 border-black text-6xl leading-6 font-bold text-white bg-orange-400 group-hover:bg-orange-500 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-700 transition ease-in-out duration-150"
+          class="inline-flex items-center px-48 py-10 border-4 border-dark-blue text-6xl leading-6 font-bold text-white bg-orange-gold group-hover:bg-orange-500 focus:outline-none focus:border-orange-700 focus:shadow-outline-orange active:bg-orange-700 transition ease-in-out duration-150"
           @click="downloadClient"
         >
           {{ $t('Play Now') }}
