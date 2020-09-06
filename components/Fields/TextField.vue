@@ -2,7 +2,7 @@
   <div>
     <label
       :for="blockIdentifier"
-      class="block text-lg font-bold leading-5 text-white"
+      class="block text-lg md:text-3xl lg:text-xl font-bold leading-5 text-white"
       >{{ label }}</label
     >
     <ValidationProvider
@@ -19,7 +19,7 @@
         >
           <input
             :id="blockIdentifier"
-            class="form-input text-white block w-full pr-10 pl-2 py-2 sm:text-sm sm:leading-5 bg-transparent border border-white"
+            class="form-input text-white block w-full pr-10 pl-2 py-2 sm:text-sm sm:leading-5 md:text-3xl lg:text-xl bg-transparent border border-white"
             :class="{
               'border-red-300 text-red-900 placeholder-red-300 focus:border-red-300 focus:shadow-outline-red': failed,
             }"
@@ -53,7 +53,11 @@
         </div>
       </div>
 
-      <p v-if="helpText" :id="helpTextId" class="mt-2 text-sm text-gray-200">
+      <p
+        v-if="helpText"
+        :id="helpTextId"
+        class="mt-2 text-sm leading-5 md:text-2xl lg:text-lg text-gray-200"
+      >
         {{ helpText }}
       </p>
 
@@ -61,7 +65,7 @@
         <li
           v-for="(message, index) in errors"
           :key="index"
-          class="mt-2 text-sm text-red-600"
+          class="mt-2 text-xl md:text-4xl lg:text-2xl md:leading-6 text-red-600"
         >
           {{ message }}
         </li>

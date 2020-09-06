@@ -58,7 +58,7 @@
             tabindex="-1"
             role="listbox"
             aria-labelledby="listbox-label"
-            class="max-h-60 rounded-md py-1 text-base leading-6 shadow-xs overflow-auto focus:outline-none sm:text-sm sm:leading-5"
+            class="max-h-60 rounded-md py-1 text-base leading-6 sm:text-sm md:text-3xl shadow-xs overflow-auto focus:outline-none"
           >
             <li
               v-for="(option, index) in results"
