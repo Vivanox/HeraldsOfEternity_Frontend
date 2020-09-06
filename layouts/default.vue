@@ -18,7 +18,12 @@
               <Logo class="h-16 w-auto py-2 px-2" />
             </nuxt-link>
             <div class="hidden sm:ml-6 sm:flex">
-              <!-- Left side of Menu -->
+              <nuxt-link
+                :to="{ path: '/' }"
+                class="inline-flex items-center h-16 px-2 pb-2 pt-3 text-4xl font-normal leading-5 text-white border-b-2 border-transparent hover:text-orange-300 hover:bg-glass hover:border-orange-400 focus:border-orange-600 focus:outline-none focus:text-white focus:bg-glass transition duration-150 ease-in-out"
+                exact-active-class="bg-white-smoke text-orange-400 border-orange-600"
+                >{{ $t('Index') }}</nuxt-link
+              >
             </div>
           </div>
           <div class="hidden sm:ml-6 sm:flex sm:items-center">
