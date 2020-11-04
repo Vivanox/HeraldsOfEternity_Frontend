@@ -1,7 +1,7 @@
 <template>
   <img
     class="appear block bg-white-smoke"
-    src="/logonobg.png"
+    src="/Website-Logo_Small.png"
     alt="Heralds Of Eternity Logo"
   />
 </template>
