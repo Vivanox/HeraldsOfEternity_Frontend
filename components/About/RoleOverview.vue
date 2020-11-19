@@ -14,9 +14,7 @@
             src="/roles/tank.png"
             alt="Tank Icon"
           />
-          <h3 class="mt-6 text-white text-sm leading-5 font-medium">
-            Tank
-          </h3>
+          <h3 class="mt-6 text-white text-sm leading-5 font-medium">Tank</h3>
           <dl class="mt-1 flex-grow flex flex-col justify-between">
             <dt class="sr-only">Role</dt>
             <dd class="text-gray-400 text-sm leading-5">
@@ -68,9 +66,7 @@
             src="/roles/dps.png"
             alt="DPS Icon"
           />
-          <h3 class="mt-6 text-white text-sm leading-5 font-medium">
-            DPS
-          </h3>
+          <h3 class="mt-6 text-white text-sm leading-5 font-medium">DPS</h3>
           <dl class="mt-1 flex-grow flex flex-col justify-between">
             <dt class="sr-only">Role</dt>
             <dd class="text-gray-400 text-sm leading-5">
@@ -114,9 +110,7 @@
             src="/roles/support.png"
             alt="Support Icon"
           />
-          <h3 class="mt-6 text-white text-sm leading-5 font-medium">
-            Support
-          </h3>
+          <h3 class="mt-6 text-white text-sm leading-5 font-medium">Support</h3>
           <dl class="mt-1 flex-grow flex flex-col justify-between">
             <dt class="sr-only">Role</dt>
             <dd class="text-gray-400 text-sm leading-5">
