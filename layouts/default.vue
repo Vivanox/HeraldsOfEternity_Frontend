@@ -6,22 +6,22 @@
       backgroundSize: 'cover',
     }"
   >
-    <nav class="bg-glass shadow-sm">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="shadow-sm bg-glass">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex">
             <nuxt-link
               :to="{ path: '/' }"
-              class="hidden lg:flex flex-shrink-0 w-full items-center border-b-2 border-transparent hover:border-orange-400 focus:border-orange-600 transition duration-150 ease-in-out"
+              class="items-center flex-shrink-0 hidden w-full transition duration-150 ease-in-out border-b-2 border-transparent lg:flex hover:border-orange-400 focus:border-orange-600"
               exact-active-class="border-orange-600"
             >
-              <Logo class="h-16 w-auto py-2 px-2" />
+              <Logo class="w-auto h-16 px-2 py-2" />
             </nuxt-link>
             <div class="hidden sm:ml-6 md:flex lg:hidden">
               <nuxt-link
                 :to="{ path: '/' }"
-                class="inline-flex items-center h-16 px-2 pb-2 pt-3 text-4xl font-normal leading-5 text-white border-b-2 border-transparent hover:text-orange-300 hover:bg-glass hover:border-orange-400 focus:border-orange-600 focus:outline-none focus:text-white focus:bg-glass transition duration-150 ease-in-out"
-                exact-active-class="bg-white-smoke text-orange-400 border-orange-600"
+                class="inline-flex items-center h-16 px-2 pt-3 pb-2 text-4xl font-normal leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-orange-300 hover:bg-glass hover:border-orange-400 focus:border-orange-600 focus:outline-none focus:text-white focus:bg-glass"
+                exact-active-class="text-orange-400 border-orange-600 bg-white-smoke"
                 >{{ $t('Index') }}</nuxt-link
               >
             </div>
@@ -32,8 +32,8 @@
               :key="index"
               :to="link.to"
               :class="{ 'ml-8': index !== 0 }"
-              class="inline-flex items-center h-16 px-2 pb-2 pt-3 text-4xl font-normal leading-5 text-white border-b-2 border-transparent hover:text-orange-300 hover:bg-glass hover:border-orange-400 focus:border-orange-600 focus:outline-none focus:text-white focus:bg-glass transition duration-150 ease-in-out"
-              exact-active-class="bg-white-smoke text-orange-400 border-orange-600"
+              class="inline-flex items-center h-16 px-2 pt-3 pb-2 text-4xl font-normal leading-5 text-white transition duration-150 ease-in-out border-b-2 border-transparent hover:text-orange-300 hover:bg-glass hover:border-orange-400 focus:border-orange-600 focus:outline-none focus:text-white focus:bg-glass"
+              exact-active-class="text-orange-400 border-orange-600 bg-white-smoke"
               >{{ link.label }}</nuxt-link
             >
 
@@ -43,14 +43,14 @@
                   <button
                     id="options-menu"
                     type="button"
-                    class="inline-flex justify-center w-full px-4 py-2 text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"
+                    class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
                     aria-haspopup="true"
                     aria-expanded="true"
                     @click="localeDropdownOpen = !localeDropdownOpen"
                   >
                     <country-flag :country="currentLocale.flag" />
                     <svg
-                      class="-mr-1 ml-2 h-5 w-5"
+                      class="w-5 h-5 ml-2 -mr-1"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -66,10 +66,10 @@
               <transition name="fade">
                 <div
                   v-show="localeDropdownOpen"
-                  class="origin-top-right absolute right-0 mt-2 w-56 shadow-lg"
+                  class="absolute right-0 w-56 mt-2 origin-top-right shadow-lg"
                 >
                   <div
-                    class="bg-glass shadow-xs"
+                    class="shadow-xs bg-glass"
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="options-menu"
@@ -89,15 +89,15 @@
             </div>
           </div>
 
-          <div class="-mr-2 flex items-center sm:hidden">
+          <div class="flex items-center -mr-2 sm:hidden">
             <!-- Mobile menu button -->
             <button
-              class="inline-flex items-center justify-center p-2 rounded-md text-white ransition duration-150 ease-in-out"
+              class="inline-flex items-center justify-center p-2 text-white duration-150 ease-in-out rounded-md ransition"
               @click="showMobileMenu = !showMobileMenu"
             >
               <svg
                 v-if="showMobileMenu"
-                class="h-6 w-6"
+                class="w-6 h-6"
                 stroke="currentColor"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -112,7 +112,7 @@
 
               <svg
                 v-else
-                class="h-6 w-6"
+                class="w-6 h-6"
                 stroke="currentColor"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -132,8 +132,8 @@
           <div class="pt-2 pb-3">
             <nuxt-link
               :to="{ path: '/' }"
-              class="block pl-3 pr-4 py-2 text-base font-medium text-white hover:text-orange-300 hover:bg-glass focus:outline-none focus:text-orange-400 transition duration-150 ease-in-out"
-              exact-active-class="border-l-4 border-orange-500 text-orange-400"
+              class="block py-2 pl-3 pr-4 text-base font-medium text-white transition duration-150 ease-in-out hover:text-orange-300 hover:bg-glass focus:outline-none focus:text-orange-400"
+              exact-active-class="text-orange-400 border-l-4 border-orange-500"
               >{{ $t('Index') }}</nuxt-link
             >
 
@@ -141,8 +141,8 @@
               v-for="(link, index) in links"
               :key="index"
               :to="link.to"
-              class="mt-1 block pl-3 pr-4 py-2 text-base font-medium text-white hover:text-orange-300 hover:bg-glass focus:outline-none focus:text-orange-400 transition duration-150 ease-in-out"
-              exact-active-class="border-l-4 border-orange-500 text-orange-400"
+              class="block py-2 pl-3 pr-4 mt-1 text-base font-medium text-white transition duration-150 ease-in-out hover:text-orange-300 hover:bg-glass focus:outline-none focus:text-orange-400"
+              exact-active-class="text-orange-400 border-l-4 border-orange-500"
               >{{ link.label }}</nuxt-link
             >
           </div>
@@ -159,21 +159,21 @@
       </div>
     </nav>
 
-    <main class="mx-auto py-1">
+    <main class="py-1 mx-auto">
       <Nuxt />
     </main>
 
     <footer class="bg-white-smoke">
       <div
-        class="max-w-screen-xl mx-auto py-4 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
+        class="max-w-screen-xl px-4 py-4 mx-auto sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
       >
         <div class="flex justify-center md:order-1">
           <a
-            href="https://www.facebook.com/vivanox"
+            href="https://www.facebook.com/HeraldsofEternity"
             class="text-gray-400 hover:text-gray-500"
           >
             <span class="sr-only">Facebook</span>
-            <svg class="h-16 w-16" fill="currentColor" viewBox="0 0 24 24">
+            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
               <path
                 fill-rule="evenodd"
                 d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
@@ -183,23 +183,24 @@
           </a>
 
           <a
-            href="https://twitter.com/vivanox_ivs"
+            href="https://twitter.com/HeraldsofE"
             class="ml-6 text-gray-400 hover:text-gray-500"
           >
             <span class="sr-only">Twitter</span>
-            <svg class="h-16 w-16" fill="currentColor" viewBox="0 0 24 24">
+            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
               <path
                 d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
               />
             </svg>
           </a>
 
+          <!--
           <a
             href="https://discord.gg/e4348S"
             class="ml-6 text-gray-400 hover:text-gray-500"
           >
             <span class="sr-only">Discord</span>
-            <svg class="h-16 w-16" fill="currentColor" viewBox="0 0 245 240">
+            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 245 240">
               <path
                 d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z"
               />
@@ -208,9 +209,10 @@
               />
             </svg>
           </a>
+          -->
         </div>
         <div class="mt-8 md:mt-0 md:order-2">
-          <p class="text-center text-xl leading-6 text-gray-400">
+          <p class="text-xl leading-6 text-center text-gray-400">
             &copy; {{ year }} Vivanox. {{ $t('All rights reserved') }}.
           </p>
         </div>
