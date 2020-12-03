@@ -170,6 +170,7 @@
         <div class="flex justify-center md:order-1">
           <a
             href="https://www.facebook.com/HeraldsofEternity"
+            target="_blank"
             class="text-gray-400 hover:text-gray-500"
           >
             <span class="sr-only">Facebook</span>
@@ -184,6 +185,7 @@
 
           <a
             href="https://twitter.com/HeraldsofE"
+            target="_blank"
             class="ml-6 text-gray-400 hover:text-gray-500"
           >
             <span class="sr-only">Twitter</span>
@@ -197,6 +199,7 @@
           <!--
           <a
             href="https://discord.gg/e4348S"
+            target="_blank"
             class="ml-6 text-gray-400 hover:text-gray-500"
           >
             <span class="sr-only">Discord</span>
