@@ -5,8 +5,8 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-   ssr: false,
-   /*
+  ssr: false,
+  /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
@@ -23,8 +23,27 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content:
+          'Heralds of Eternity is a team-based multi-type & multiplayer game, with a twist.',
       },
+      { property: 'og:site_name', content: 'Heralds Of Eternity' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://heraldsofeternity.com',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Heralds of Eternity is a team-based multi-type & multiplayer game, with a twist.',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Heralds Of Eternity',
+      },
+      { property: 'og:type', content: 'application/javascript' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
